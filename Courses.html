@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses — Star University</title>
+  
+  <link rel="icon" href="college logo.png" type="image/png" style="border-radius: 24px;">
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/Courses.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div class="page-loader">
+  
+  <div class="loader-logo"><img src="college logo.png" alt="Star University Logo" width="300px" height="300px" style="border-radius: 30%;"></div>
+  <div class="loader-logo">STAR UNIVERSITY</div>
+  <div class="loader-bar-track"><div class="loader-bar"></div></div>
+  <div class="loader-text">Loading Programs</div>
+</div>
+
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+<div class="progress-bar"></div>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo"><div class="nav-logo-mark"><img src="college logo.png" alt="Star University Logo" width="70px" height="70px"></div><span>STAR UNIVERSITY</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="About.html">About</a></li>
+    <li><a href="Courses.html" class="active">Courses</a></li><li><a href="Admissions.html">Admissions</a></li>
+    <li><a href="Facilities.html">Facilities</a></li><li><a href="Gallery.html">Gallery</a></li>
+    <li><a href="Placements.html">Placements</a></li><li><a href="Student Life.html">Student Life</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-cta"><a href="Admissions.html" class="btn btn-primary" style="padding:10px 24px;font-size:13px;">Apply Now</a></div>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a><a href="About.html">About</a><a href="Courses.html">Courses</a>
+  <a href="Admissions.html">Admissions</a><a href="Facilities.html">Facilities</a>
+  <a href="Gallery.html">Gallery</a><a href="Placements.html">Placements</a>
+  <a href="Student Life.html">Student Life</a><a href="Contact.html">Contact</a>
+</div>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1920&auto=format&fit=crop" alt="Courses" class="page-hero-bg">
+  <div class="page-hero-overlay"></div>
+  <div class="blob" style="width:400px;height:400px;background:radial-gradient(circle,rgba(104,186,127,0.4),transparent 70%);top:-80px;left:-80px;animation:floatBlob 10s ease-in-out infinite;position:absolute;border-radius:50%;filter:blur(60px);pointer-events:none;opacity:.4"></div>
+  <div class="container">
+    <div class="page-hero-content">
+      <div class="section-label reveal">350+ Programs</div>
+      <h1 class="page-hero-title reveal">Explore Our <span class="gradient-text">Courses</span></h1>
+      <p class="page-hero-sub reveal">World-class programs designed for tomorrow's innovators, leaders and changemakers.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Filter Bar -->
+<section class="filter-section">
+  <div class="container">
+    <div class="filter-bar reveal">
+      <button class="filter-btn active" data-filter="all">All Programs</button>
+      <button class="filter-btn" data-filter="engineering">Engineering & Technology</button>
+      <button class="filter-btn" data-filter="arts">Arts & Design</button>
+      <button class="filter-btn" data-filter="commerce">Commerce & Management</button>
+      <button class="filter-btn" data-filter="science">Pure Sciences</button>
+      <button class="filter-btn" data-filter="health">Health & Medicine</button>
+    </div>
+  </div>
+</section>
+
+<!-- Courses Grid -->
+<section class="section courses-main">
+  <div class="container">
+    <div class="courses-grid" id="coursesGrid">
+
+      <div class="course-card glass tilt-card reveal" data-category="engineering">
+        <div class="course-img-wrap">
+          <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&q=80" alt="CS & AI" loading="lazy">
+          <span class="course-tag">Engineering</span>
+          <div class="course-img-overlay"></div>
+        </div>
+        <div class="course-body">
+          <h3>B.Tech Computer Science & Artificial Intelligence</h3>
+          <p>Master the fundamentals of computing and build intelligent systems that redefine industries.</p>
+          <div class="course-meta">
+  <span><i class="far fa-clock"></i> 4 Years</span>
+  <span><i class="fas fa-graduation-cap"></i> Bachelor's</span>
+  <span><i class="fas fa-trophy"></i> Merit Scholarships</span>
+</div>
+          <div class="course-highlights">
+            <span class="highlight-tag">Machine Learning</span>
+            <span class="highlight-tag">Neural Networks</span>
+            <span class="highlight-tag">Cloud Computing</span>
+          </div>
+          <a href="Admissions.html" class="btn btn-primary course-btn">Apply Now</a>
+        </div>
+      </div>
+
+      <div class="course-card glass tilt-card reveal" data-category="engineering" data-delay="100">
+        <div class="course-img-wrap">
+          <img src="https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?w=600&q=80" alt="Robotics" loading="lazy">
+          <span class="course-tag">Engineering</span>
+          <div class="course-img-overlay"></div>
+        </div>
+        <div class="course-body">
+          <h3>B.Tech Robotics & Mechatronics Engineering</h3>
+          <p>Design the next generation of autonomous systems, drones and smart machines.</p>
+          <div class="course-meta">
+  <span><i class="far fa-clock"></i> 4 Years</span>
+  <span><i class="fas fa-graduation-cap"></i> Bachelor's</span>
+  <span><i class="fas fa-trophy"></i> Merit Scholarships</span>
+</div>
+          <div class="course-highlights">
+            <span class="highlight-tag">Autonomous Systems</span>
+            <span class="highlight-tag">IoT</span>
+            <span class="highlight-tag">Embedded Systems</span>
+          </div>
+          <a href="Admissions.html" class="btn btn-primary course-btn">Apply Now</a>
+        </div>
+      </div>
+
+      <div class="course-card glass tilt-card reveal" data-category="engineering" data-delay="200">
+        <div class="course-img-wrap">
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80" alt="Cyber Security" loading="lazy">
+          <span class="course-tag">Engineering</span>
+          <div class="course-img-overlay"></div>
+        </div>
+        <div class="course-body">
+          <h3>B.Tech Cybersecurity & Ethical Hacking</h3>
+          <p>Defend the digital world. Become a guardian of cyberspace in the AI era.</p>
+          <div class="course-meta">
+  <span><i class="far fa-clock"></i> 4 Years</span>
+  <span><i class="fas fa-graduation-cap"></i> Bachelor's</span>
+  <span><i class="fas fa-trophy"></i> Merit Scholarships</span>
+</div>
+          <div class="course-highlights">
+            <span class="highlight-tag">Network Security</span>
+            <span class="highlight-tag">Blockchain</span>
+            <span class="highlight-tag">Forensics</span>
+            <span class="highlight-tag">Ethical Hacking</span>
+          </div>
+          <a href="Admissions.html" class="btn btn-primary course-btn">Apply Now</a>
+        </div>
+      </div>
+
+      <div class="course-card glass tilt-card reveal" data-category="arts">
+        <div class="course-img-wrap">
+          <img src="https://images.unsplash.com/photo-1534951009808-766178b47a4f?w=600&q=80" alt="Design" loading="lazy">
+          <span class="course-tag">Arts</span>
+          <div class="course-img-overlay"></div>
+        </div>
+        <div class="course-body">
+          <h3>B.Des UX/UI & Interaction Design</h3>
+          <p>Craft digital experiences that are beautiful, intuitive and deeply human-centered.</p>
+          <div class="course-meta">
+  <span><i class="far fa-clock"></i> 4 Years</span>
+  <span><i class="fas fa-graduation-cap"></i> Bachelor's</span>
+  <span><i class="fas fa-trophy"></i> Portfolio Scholarships</span>
+</div>
+          <div class="course-highlights">
+            <span class="highlight-tag">Figma & Adobe</span>
+            <span class="highlight-tag">User Research</span>
+            <span class="highlight-tag">Prototyping</span>
+          </div>
+          <a href="Admissions.html" class="btn btn-primary course-btn">Apply Now</a>
+        </div>
+      </div>
+
+      <div class="course-card glass tilt-card reveal" data-category="arts" data-delay="100">
+        <div class="course-img-wrap">
+          <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80" alt="Media" loading="lazy">
+          <span class="course-tag">Arts</span>
+          <div class="course-img-overlay"></div>
+        </div>
+        <div class="course-body">
+          <h3>B.A. Global Media & Communication</h3>
+          <p>Shape global narratives through journalism, film, digital media and strategic communications.</p>
+          <div class="course-meta">
+  <span><i class="far fa-clock"></i> 3 Years</span>
+  <span><i class="fas fa-graduation-cap"></i> Bachelor's</span>
+  <span><i class="fas fa-trophy"></i> Creative Bursaries</span>
+</div>
+          <div class="course-highlights">
+            <span class="highlight-tag">Journalism</span>
+            <span class="highlight-tag">Film Production</span>
+            <span class="highlight-tag">Digital Marketing</span>
+          </div>
+          <a href="Admissions.html" class="btn btn-primary course-btn">Apply Now</a>
+        </div>
+      </div>
+
+      <div class="course-card glass tilt-card reveal" data-category="commerce" data-delay="200">
+        <div class="course-img-wrap">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80" alt="MBA" loading="lazy">
+          <span class="course-tag">Commerce</span>
+          <div class="course-img-overlay"></div>
+        </div>
+        <div class="course-body">
+          <h3>MBA International Business & Strategy</h3>
+          <p>Lead global enterprises, manage cross-cultural teams and drive breakthrough strategy.</p>
+          <div class="course-meta">
+            <span><i class="far fa-clock"></i> 2 Years</span>
+            <span><i class="fas fa-graduation-cap"></i> Master's</span>
+            <span><i class="fas fa-trophy"></i> Executive Fellowships</span>
+          </div>
+          <div class="course-highlights">
+            <span class="highlight-tag">Global Strategy</span>
+            <span class="highlight-tag">Venture Capital</span>
+            <span class="highlight-tag">Leadership</span>
+          </div>
+          <a href="Admissions.html" class="btn btn-primary course-btn">Apply Now</a>
+        </div>
+      </div>
+
+      <div class="course-card glass tilt-card reveal" data-category="commerce">
+        <div class="course-img-wrap">
+          <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=80" alt="Finance" loading="lazy">
+          <span class="course-tag">Commerce</span>
+          <div class="course-img-overlay"></div>
+        </div>
+        <div class="course-body">
+          <h3>B.Com FinTech & Digital Finance</h3>
+          <p>Navigate the intersection of finance and technology — cryptocurrency, AI trading and DeFi.</p>
+          <div class="course-meta">
+            <span><i class="far fa-clock"></i> 3 Years</span>
+            <span><i class="fas fa-graduation-cap"></i> Bachelor's</span>
+            <span><i class="fas fa-trophy"></i> Finance Scholarships</span>
+          </div>
+          <div class="course-highlights">
+            <span class="highlight-tag">Blockchain</span>
+            <span class="highlight-tag">Crypto Markets</span>
+            <span class="highlight-tag">AI Finance</span>
+          </div>
+          <a href="Admissions.html" class="btn btn-primary course-btn">Apply Now</a>
+        </div>
+      </div>
+
+      <div class="course-card glass tilt-card reveal" data-category="science" data-delay="100">
+        <div class="course-img-wrap">
+          <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&q=80" alt="Biotech" loading="lazy">
+          <span class="course-tag">Sciences</span>
+          <div class="course-img-overlay"></div>
+        </div>
+        <div class="course-body">
+          <h3>B.Sc Biotechnology & Genomics</h3>
+          <p>Engineer the building blocks of life. Unlock cures, crops and breakthroughs at the molecular level.</p>
+          <div class="course-meta">
+            <span><i class="far fa-clock"></i> 4 Years</span>
+            <span><i class="fas fa-graduation-cap"></i> Bachelor's</span>
+            <span><i class="fas fa-trophy"></i> Research Grants</span>
+          </div>
+          <div class="course-highlights">
+            <span class="highlight-tag">CRISPR</span>
+            <span class="highlight-tag">Gene Therapy</span>
+            <span class="highlight-tag">Proteomics</span>
+          </div>
+          <a href="Admissions.html" class="btn btn-primary course-btn">Apply Now</a>
+        </div>
+      </div>
+
+      <div class="course-card glass tilt-card reveal" data-category="health" data-delay="200">
+        <div class="course-img-wrap">
+          <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&q=80" alt="Medicine" loading="lazy">
+          <span class="course-tag">Health</span>
+          <div class="course-img-overlay"></div>
+        </div>
+        <div class="course-body">
+          <h3>MBBS — Doctor of Medicine & AI Diagnostics</h3>
+          <p>The future of medicine is AI-augmented. Train to be the doctor who leads that revolution.</p>
+          <div class="course-meta">
+            <span><i class="far fa-clock"></i> 5.5 Years</span>
+            <span><i class="fas fa-graduation-cap"></i> Professional Degree</span>
+            <span><i class="fas fa-trophy"></i> Medical Fellowships</span>
+          </div>
+          <div class="course-highlights">
+            <span class="highlight-tag">AI Diagnostics</span>
+            <span class="highlight-tag">Surgery</span>
+            <span class="highlight-tag">Research</span>
+          </div>
+          <a href="Admissions.html" class="btn btn-primary course-btn">Apply Now</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="no-results" id="noResults" style="display:none;">
+      <p>No courses found for this category. <a href="#" onclick="filterCourses('all')">View all programs</a></p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:8px">
+          <div class="nav-logo-mark"><img src="college logo.png" alt="Star University Logo" width="100px" height="100px"></div>
+          <span>STAR UNIVERSITY</span>
+        </div>
+        <p>World's Number One University, shaping minds and transforming futures since 1950. A beacon of excellence, innovation and sustainable education.</p>
+        <div class="social-icons">
+          <div class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></div>
+          <div class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></div>
+          <div class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></div>
+          <div class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></div>
+          <div class="social-icon" title="Facebook"><i class="fab fa-facebook"></i></div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Academics</div>
+        <ul class="footer-links">
+          <li><a href="Courses.html">All Courses</a></li>
+          <li><a href="Courses.html">Engineering</a></li>
+          <li><a href="Courses.html">Arts & Design</a></li>
+          <li><a href="Courses.html">Commerce & MBA</a></li>
+          <li><a href="Courses.html">Research Programs</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Campus</div>
+        <ul class="footer-links">
+          <li><a href="Facilities.html">Facilities</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="Student Life.html">Student Life</a></li>
+          <li><a href="Placements.html">Placements</a></li>
+          <li><a href="About.html">About Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Contact</div>
+        <ul class="footer-links">
+          <li><a href="Contact.html"><i class="fas fa-map-marker-alt"></i> Star Avenue, Innovation City</a></li>
+          <li><a href="mailto:info@staruniversity.edu"><i class="fas fa-envelope"></i> info@staruniversity.edu</a></li>
+          <li><a href="tel:+18001234567"><i class="fas fa-phone"></i> +1 800 123 4567</a></li>
+          <li><a href="Admissions.html">Apply Online</a></li>
+          <li><a href="Contact.html">Help Center</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Star University. All Rights Reserved.</span>
+      <span>Privacy Policy · Terms of Use · Accessibility</span>
+    </div>
+  </div>
+</footer>
+
+<button class="ai-chat-btn"><i class="fas fa-robot"></i></button>
+<div class="ai-chat-widget">
+  <div class="chat-header"><div class="chat-avatar"><i class="fas fa-robot"></i></div><div class="chat-header-info"><h4>STAR AI Advisor</h4><p>Always online</p></div><div class="chat-online" style="margin-left:auto"></div></div>
+  <div class="chat-messages"><div class="chat-msg bot">👋 Need help choosing a course? I'm here!</div></div>
+  <div class="chat-input-row"><input class="chat-input" placeholder="Ask me anything…" type="text"><button class="chat-send">➤</button></div>
+</div>
+
+<script src="js/shared.js"></script>
+<script src="js/Courses.js"></script>
+</body>
+</html>

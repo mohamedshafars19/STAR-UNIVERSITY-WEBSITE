@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admissions — Star University</title>
+  
+  <link rel="icon" href="college logo.png" type="image/png" style="border-radius: 24px;">
+  <link rel="icon" href="college logo.png" type="image/png" style="border-radius: 24px;">
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/Admissions.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div class="page-loader">
+  <div class="loader-logo"><img src="college logo.png" alt="Star University Logo" width="300px" height="300px" style="border-radius: 30%;"></div>
+  <div class="loader-logo">STAR UNIVERSITY</div>
+  <div class="loader-bar-track"><div class="loader-bar"></div></div>
+  <div class="loader-text">Opening Doors</div>
+</div>
+
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+<div class="progress-bar"></div>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-mark"><img src="college logo.png" alt="Star University Logo" width="70px" height="70px"></div>
+    <span>STAR UNIVERSITY</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="About.html">About</a></li>
+    <li><a href="Courses.html">Courses</a></li><li><a href="Admissions.html" class="active">Admissions</a></li>
+    <li><a href="Facilities.html">Facilities</a></li><li><a href="Gallery.html">Gallery</a></li>
+    <li><a href="Placements.html">Placements</a></li><li><a href="Student Life.html">Student Life</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-cta"><a href="#apply-modal" class="btn btn-primary" style="padding:10px 24px;font-size:13px;" id="openModal">Apply Now</a></div>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a><a href="About.html">About</a><a href="Courses.html">Courses</a>
+  <a href="Admissions.html">Admissions</a><a href="Facilities.html">Facilities</a>
+  <a href="Gallery.html">Gallery</a><a href="Placements.html">Placements</a>
+  <a href="Student Life.html">Student Life</a><a href="Contact.html">Contact</a>
+</div>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=1920&auto=format&fit=crop" alt="Admissions" class="page-hero-bg">
+  <div class="page-hero-overlay"></div>
+  <div class="container">
+    <div class="page-hero-content">
+      <div class="section-label reveal">Join the Elite</div>
+      <h1 class="page-hero-title reveal">Admissions <span class="gradient-text">2025–26</span></h1>
+      <p class="page-hero-sub reveal">Applications are now open. Take the first step toward your world-class education.</p>
+      <div style="margin-top:32px" class="reveal">
+        <button class="btn btn-primary" id="openModal2">Apply Now <i class="fas fa-arrow-right"></i></button>
+        <a href="#process" class="btn btn-ghost" style="margin-left:16px">Learn Process <i class="fas fa-info-circle"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Admission Process -->
+<section class="section" id="process">
+  <div class="container">
+    <div class="section-label reveal">How to Apply</div>
+    <h2 class="section-title reveal">Admission Process</h2>
+    <div class="process-steps">
+      <div class="step glass tilt-card reveal">
+        <div class="step-num">01</div>
+        <div class="step-icon"><i class="fas fa-edit"></i></div>
+        <h4>Register Online</h4>
+        <p>Create your account and fill in the online application form with your personal and academic details.</p>
+      </div>
+      <div class="step-arrow reveal"><i class="fas fa-arrow-right"></i></div>
+      <div class="step glass tilt-card reveal" data-delay="100">
+        <div class="step-num">02</div>
+        <div class="step-icon"><i class="fas fa-file-alt"></i></div>
+        <h4>Submit Document</h4>
+        <p>Upload your transcripts, SOP, letters of recommendation, and any additional required documents.</p>
+      </div>
+      <div class="step-arrow reveal"><i class="fas fa-arrow-right"></i></div>
+      <div class="step glass tilt-card reveal" data-delay="200">
+        <div class="step-num">03</div>
+        <div class="step-icon"><i class="fas fa-bullseye"></i></div>
+        <h4>Entrance Test</h4>
+        <p>Appear for our AI-proctored entrance test or submit equivalent standardized scores (SAT/GRE/GMAT).</p>
+      </div>
+      <div class="step-arrow reveal"><i class="fas fa-arrow-right"></i></div>
+      <div class="step glass tilt-card reveal" data-delay="300">
+        <div class="step-num">04</div>
+        <div class="step-icon"><i class="fas fa-trophy"></i></div>
+        <h4>Get Your Offer</h4>
+        <p>Receive your admission decision within 2 weeks. Accept your offer and begin your Star journey!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Programs Table -->
+<section class="section table-section">
+  <div class="container">
+    <div class="section-label reveal">Programs at a Glance</div>
+    <h2 class="section-title reveal">Available Programs 2025–26</h2>
+    <p class="section-sub reveal">Click column headers to sort. All fees are per annum in USD.</p>
+
+    <div class="table-wrap glass reveal">
+      <div class="table-controls">
+        <input class="table-search" type="text" placeholder="Search programs…" id="tableSearch">
+        <i class="fas fa-search search-icon"></i>
+      </div>
+      <div class="table-scroll">
+        <table class="adm-table" id="admTable">
+          <thead>
+            <tr>
+              <th class="sortable" data-col="0">Program <span class="sort-icon"><i class="fas fa-sort"></i></span></th>
+              <th class="sortable" data-col="1">Department <span class="sort-icon"><i class="fas fa-sort"></i></span></th>
+              <th class="sortable" data-col="2">Duration <span class="sort-icon"><i class="fas fa-sort"></i></span></th>
+              <th class="sortable" data-col="3">Seats <span class="sort-icon"><i class="fas fa-sort"></i></span></th>
+              <th class="sortable" data-col="4">Fee (USD/yr) <span class="sort-icon"><i class="fas fa-sort"></i></span></th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <tr><td>B.Tech Computer Science & AI</td><td>Engineering</td><td>4 Years</td><td>120</td><td>$18,000</td><td><button class="tbl-apply-btn btn btn-primary" onclick="openApplyModal('B.Tech Computer Science & AI')">Apply <i class="fas fa-paper-plane"></i></button></td></tr>
+            <tr><td>B.Tech Robotics & Mechatronics</td><td>Engineering</td><td>4 Years</td><td>80</td><td>$17,500</td><td><button class="tbl-apply-btn btn btn-primary" onclick="openApplyModal('B.Tech Robotics')">Apply <i class="fas fa-paper-plane"></i></button></td></tr>
+            <tr><td>B.Tech Cybersecurity</td><td>Engineering</td><td>4 Years</td><td>60</td><td>$17,000</td><td><button class="tbl-apply-btn btn btn-primary" onclick="openApplyModal('B.Tech Cybersecurity')">Apply <i class="fas fa-paper-plane"></i></button></td></tr>
+            <tr><td>B.Tech Civil & Smart Infrastructure</td><td>Engineering</td><td>4 Years</td><td>100</td><td>$15,500</td><td><button class="tbl-apply-btn btn btn-primary" onclick="openApplyModal('B.Tech Civil')">Apply <i class="fas fa-paper-plane"></i></button></td></tr>
+            <tr><td>B.Des UX/UI & Interaction Design</td><td>Arts & Design</td><td>4 Years</td><td>50</td><td>$14,000</td><td><button class="tbl-apply-btn btn btn-primary" onclick="openApplyModal('B.Des UX/UI')">Apply <i class="fas fa-paper-plane"></i></button></td></tr>
+            <tr><td>B.A. Global Media & Communication</td><td>Arts & Design</td><td>3 Years</td><td>70</td><td>$12,000</td><td><button class="tbl-apply-btn btn btn-primary" onclick="openApplyModal('B.A. Global Media')">Apply <i class="fas fa-paper-plane"></i></button></td></tr>
+            <tr><td>B.A. Psychology & Behavioral Science</td><td>Arts & Design</td><td>3 Years</td><td>80</td><td>$11,500</td><td><button class="tbl-apply-btn btn btn-primary" onclick="openApplyModal('B.A. Psychology')">Apply <i class="fas fa-paper-plane"></i></button></td></tr>
+            <tr><td>MBA International Business</td><td>Commerce</td><td>2 Years</td><td>90</td><td>$24,000</td><td><button class="tbl-apply-btn btn btn-primary" onclick="openApplyModal('MBA International Business')">Apply <i class="fas fa-paper-plane"></i></button></td></tr>
+            <tr><td>B.Com FinTech & Digital Finance</td><td>Commerce</td><td>3 Years</td><td>100</td><td>$13,000</td><td><button class="tbl-apply-btn btn btn-primary" onclick="openApplyModal('B.Com FinTech')">Apply <i class="fas fa-paper-plane"></i></button></td></tr>
+            <tr><td>B.Sc Biotechnology & Genomics</td><td>Sciences</td><td>4 Years</td><td>60</td><td>$16,000</td><td><button class="tbl-apply-btn btn btn-primary" onclick="openApplyModal('B.Sc Biotechnology')">Apply <i class="fas fa-paper-plane"></i></button></td></tr>
+            <tr><td>MBBS & AI Diagnostics</td><td>Health & Medicine</td><td>5.5 Years</td><td>150</td><td>$28,000</td><td><button class="tbl-apply-btn btn btn-primary" onclick="openApplyModal('MBBS')">Apply <i class="fas fa-paper-plane"></i></button></td></tr>
+            <tr><td>Ph.D AI & Machine Learning</td><td>Research</td><td>3–5 Years</td><td>20</td><td>$0 (Funded)</td><td><button class="tbl-apply-btn btn btn-primary" onclick="openApplyModal('Ph.D AI')">Apply <i class="fas fa-paper-plane"></i></button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Application Modal -->
+<div class="modal-overlay" id="applyModal">
+  <div class="modal glass">
+    <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+    <div class="modal-header">
+      <h3>Apply to <span id="modalProgram" class="gradient-text">Star University</span></h3>
+      <p>Fill in your details and we'll get back to you within 48 hours.</p>
+    </div>
+
+    <form class="apply-form" id="applyForm" novalidate>
+      <div class="form-group">
+        <input type="text" class="form-input" id="appName" placeholder=" " required>
+        <label class="form-label" for="appName">Full Name <i class="fas fa-user"></i> *</label>
+        <span class="form-error" id="nameError"></span>
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-input" id="appEmail" placeholder=" " required>
+        <label class="form-label" for="appEmail">Email Address <i class="fas fa-envelope"></i> *</label>
+        <span class="form-error" id="emailError"></span>
+      </div>
+      <div class="form-group">
+        <input type="tel" class="form-input" id="appPhone" placeholder=" " required>
+        <label class="form-label" for="appPhone">Phone Number <i class="fas fa-phone-alt"></i> *</label>
+        <span class="form-error" id="phoneError"></span>
+      </div>
+      <div class="form-group">
+        <select class="form-input form-select" id="appProgram" required>
+          <option value="">Select a Program</option>
+          <option>B.Tech Computer Science & AI</option>
+          <option>B.Tech Robotics & Mechatronics</option>
+          <option>B.Tech Cybersecurity</option>
+          <option>B.Des UX/UI & Interaction Design</option>
+          <option>B.A. Global Media & Communication</option>
+          <option>MBA International Business</option>
+          <option>B.Com FinTech & Digital Finance</option>
+          <option>B.Sc Biotechnology & Genomics</option>
+          <option>MBBS & AI Diagnostics</option>
+          <option>Ph.D AI & Machine Learning</option>
+        </select>
+        <label class="form-label form-label-select" for="appProgram">Program <i class="fas fa-graduation-cap"></i> *</label>
+        <span class="form-error" id="programError"></span>
+      </div>
+      <div class="form-group">
+        <textarea class="form-input form-textarea" id="appSop" placeholder=" " rows="4"></textarea>
+        <label class="form-label" for="appSop">Statement of Purpose <i class="fas fa-file-alt"></i></label>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:8px">Submit Application <i class="fas fa-check-circle"></i></button>
+    </form>
+  </div>
+</div>
+
+<!-- Success Popup -->
+<div class="success-popup" id="successPopup">
+  <div class="success-inner glass">
+    <div class="success-icon"><i class="fas fa-tada"></i></div>
+    <h3>Application Submitted!</h3>
+    <p>Thank you! Our admissions team will contact you within 48 hours. Check your email for a confirmation.</p>
+    <button class="btn btn-primary" onclick="closeSuccess()" style="margin-top:16px">Done <i class="fas fa-thumbs-up"></i></button>
+  </div>
+</div>
+
+<!-- Footer -->
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:8px">
+          <div class="nav-logo-mark"><img src="college logo.png" alt="Star University Logo" width="100px" height="100px"></div>
+          <span>STAR UNIVERSITY</span>
+        </div>
+        <p>World's Number One University, shaping minds and transforming futures since 1950. A beacon of excellence, innovation and sustainable education.</p>
+        <div class="social-icons">
+          <div class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></div>
+          <div class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></div>
+          <div class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></div>
+          <div class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></div>
+          <div class="social-icon" title="Facebook"><i class="fab fa-facebook"></i></div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Academics</div>
+        <ul class="footer-links">
+          <li><a href="Courses.html">All Courses</a></li>
+          <li><a href="Courses.html">Engineering</a></li>
+          <li><a href="Courses.html">Arts & Design</a></li>
+          <li><a href="Courses.html">Commerce & MBA</a></li>
+          <li><a href="Courses.html">Research Programs</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Campus</div>
+        <ul class="footer-links">
+          <li><a href="Facilities.html">Facilities</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="Student Life.html">Student Life</a></li>
+          <li><a href="Placements.html">Placements</a></li>
+          <li><a href="About.html">About Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Contact</div>
+        <ul class="footer-links">
+          <li><a href="Contact.html"><i class="fas fa-map-marker-alt"></i> Star Avenue, Innovation City</a></li>
+          <li><a href="mailto:info@staruniversity.edu"><i class="fas fa-envelope"></i> info@staruniversity.edu</a></li>
+          <li><a href="tel:+18001234567"><i class="fas fa-phone"></i> +1 800 123 4567</a></li>
+          <li><a href="Admissions.html">Apply Online</a></li>
+          <li><a href="Contact.html">Help Center</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Star University. All Rights Reserved.</span>
+      <span>Privacy Policy · Terms of Use · Accessibility</span>
+    </div>
+  </div>
+</footer>
+
+<button class="ai-chat-btn" title="AI Advisor"><i class="fas fa-robot"></i></button>
+<div class="ai-chat-widget">
+  <div class="chat-header">
+    <div class="chat-avatar"><i class="fas fa-robot"></i></div>
+    <div class="chat-header-info"><h4>STAR AI Advisor</h4><p>Always online</p></div>
+    <div class="chat-online" style="margin-left:auto"></div>
+  </div>
+  <div class="chat-messages"><div class="chat-msg bot"><i class="fas fa-comment-dots"></i> Questions about admissions? I can help!</div></div>
+  <div class="chat-input-row"><input class="chat-input" placeholder="Ask me anything…" type="text"><button class="chat-send"><i class="fas fa-arrow-right"></i></button></div>
+</div>
+
+<script src="js/shared.js"></script>
+<script src="js/Admissions.js"></script>
+</body>
+</html>

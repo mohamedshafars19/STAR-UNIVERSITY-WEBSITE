@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="college logo.png" type="image/png" style="border-radius: 24px;">
+  <title>Placements — Star University</title>
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/Placement.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div class="page-loader">
+  <div class="loader-logo"><img src="college logo.png" alt="Star University Logo" width="300px" height="300px" style="border-radius: 30%;"></div>
+  <div class="loader-logo">STAR UNIVERSITY</div>
+  <div class="loader-bar-track"><div class="loader-bar"></div></div>
+  <div class="loader-text">Loading Opportunities</div>
+</div>
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+<div class="progress-bar"></div>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo"><div class="nav-logo-mark"><img src="college logo.png" alt="Star University Logo" width="70px" height="70px"></div><span>STAR UNIVERSITY</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="About.html">About</a></li>
+    <li><a href="Courses.html">Courses</a></li><li><a href="Admissions.html">Admissions</a></li>
+    <li><a href="Facilities.html">Facilities</a></li><li><a href="Gallery.html">Gallery</a></li>
+    <li><a href="Placements.html" class="active">Placements</a></li><li><a href="Student Life.html">Student Life</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-cta"><a href="Admissions.html" class="btn btn-primary" style="padding:10px 24px;font-size:13px;">Apply Now</a></div>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a><a href="About.html">About</a><a href="Courses.html">Courses</a>
+  <a href="Admissions.html">Admissions</a><a href="Facilities.html">Facilities</a>
+  <a href="Gallery.html">Gallery</a><a href="Placements.html">Placements</a>
+  <a href="Student Life.html">Student Life</a><a href="Contact.html">Contact</a>
+</div>
+
+<!-- Hero -->
+<section class="page-hero place-hero">
+  <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?w=1920&q=80" alt="Placements" class="page-hero-bg">
+  <div class="page-hero-overlay"></div>
+  <canvas id="particleCanvas" class="place-canvas"></canvas>
+  <div class="container">
+    <div class="page-hero-content">
+      <div class="section-label reveal">Career Excellence</div>
+      <h1 class="page-hero-title reveal">99% <span class="gradient-text">Placement Rate</span></h1>
+      <p class="page-hero-sub reveal">Star graduates are in demand at the world's most admired companies. Our placement record speaks for itself.</p>
+    </div>
+  </div>
+</section>
+<!-- Placement Stats -->
+<section class="section place-stats-section">
+  <div class="container">
+    <div class="place-stats-grid">
+      <div class="place-stat-card glass tilt-card reveal">
+        <div class="psc-icon"><i class="fas fa-briefcase"></i></div>
+        <div class="psc-num"><span data-target="99">0</span>%</div>
+        <div class="psc-label">Placement Rate</div>
+      </div>
+      <div class="place-stat-card glass tilt-card reveal" data-delay="100">
+        <div class="psc-icon"><i class="fas fa-building"></i></div>
+        <div class="psc-num"><span data-target="500">0</span>+</div>
+        <div class="psc-label">Recruiting Companies</div>
+      </div>
+      <div class="place-stat-card glass tilt-card reveal" data-delay="200">
+        <div class="psc-icon"><i class="fas fa-money-bill-wave"></i></div>
+        <div class="psc-num">$<span data-target="185">0</span>K</div>
+        <div class="psc-label">Highest Package (USD)</div>
+      </div>
+      <div class="place-stat-card glass tilt-card reveal" data-delay="300">
+        <div class="psc-icon"><i class="fas fa-chart-line"></i></div>
+        <div class="psc-num">$<span data-target="72">0</span>K</div>
+        <div class="psc-label">Average Package (USD)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Top Recruiters -->
+<section class="section recruiters-section">
+  <div class="container">
+    <div class="section-label reveal">Our Recruiter Network</div>
+    <h2 class="section-title reveal">Top Global Recruiters</h2>
+    <p class="section-sub reveal">500+ companies visit our campus annually — from Fortune 500 giants to innovative startups.</p>
+
+    <div class="recruiter-grid">
+  <div class="recruiter-card glass tilt-card reveal" style="--delay:0s"><div class="rc-logo"><i class="fab fa-apple"></i></div><span>Apple</span></div>
+  <div class="recruiter-card glass tilt-card reveal" style="--delay:.05s"><div class="rc-logo"><i class="fab fa-google"></i></div><span>Google</span></div>
+  <div class="recruiter-card glass tilt-card reveal" style="--delay:.1s"><div class="rc-logo"><i class="fab fa-microsoft"></i></div><span>Microsoft</span></div>
+  <div class="recruiter-card glass tilt-card reveal" style="--delay:.2s"><div class="rc-logo"><i class="fab fa-amazon"></i></div><span>Amazon</span></div>
+  <div class="recruiter-card glass tilt-card reveal" style="--delay:.25s"><div class="rc-logo"><i class="fas fa-brain"></i></div><span>DeepMind</span></div>
+  <div class="recruiter-card glass tilt-card reveal" style="--delay:.35s"><div class="rc-logo"><i class="fab fa-fort-awesome"></i></div><span>Goldman Sachs</span></div>
+  <div class="recruiter-card glass tilt-card reveal" style="--delay:.45s"><div class="rc-logo"><i class="fab fa-salesforce"></i></div><span>Salesforce</span></div>
+  <div class="recruiter-card glass tilt-card reveal" style="--delay:.5s"><div class="rc-logo"><i class="fas fa-chart-line"></i></div><span>McKinsey</span></div>
+  <div class="recruiter-card glass tilt-card reveal" style="--delay:.55s"><div class="rc-logo"><i class="fab fa-delicious"></i></div><span>Deloitte</span></div>
+  <div class="recruiter-card glass tilt-card reveal" style="--delay:.6s"><div class="rc-logo"><i class="fas fa-rocket"></i></div><span>SpaceX</span></div>
+  <div class="recruiter-card glass tilt-card reveal" style="--delay:.65s"><div class="rc-logo"><i class="fas fa-capsules"></i></div><span>Pfizer</span></div>
+  <div class="recruiter-card glass tilt-card reveal" style="--delay:.75s"><div class="rc-logo"><i class="fab fa-steam"></i></div><span>Valve</span></div>
+</div>
+</section>
+
+<!-- Placement Stories -->
+<section class="section stories-section">
+  <div class="container">
+    <div class="section-label reveal">Success Stories</div>
+    <h2 class="section-title reveal">Star Alumni at the Top</h2>
+
+    <div class="stories-grid">
+      <div class="story-card glass tilt-card reveal">
+        <img src="https://i.pravatar.cc/100?img=11" alt="Alumni">
+        <div class="story-body">
+          <h4>Rohan Kapoor</h4>
+          <span class="story-role">Senior AI Engineer — Google DeepMind</span>
+          <p>"The AI curriculum and hands-on research experience at Star gave me an unfair advantage. I landed my dream role 6 months before graduation."</p>
+          <div class="story-pkg">Package: <strong>$165,000 / year</strong></div>
+        </div>
+      </div>
+      <div class="story-card glass tilt-card reveal" data-delay="100">
+        <img src="https://i.pravatar.cc/100?img=25" alt="Alumni">
+        <div class="story-body">
+          <h4>Anika Patel</h4>
+          <span class="story-role">Product Lead — Apple Inc.</span>
+          <p>"Star University's industry mentorship program connected me directly with Apple recruiters. My MBA gave me global business acumen."</p>
+          <div class="story-pkg">Package: <strong>$148,000 / year</strong></div>
+        </div>
+      </div>
+      <div class="story-card glass tilt-card reveal" data-delay="200">
+        <img src="https://i.pravatar.cc/100?img=32" alt="Alumni">
+        <div class="story-body">
+          <h4>James O'Brien</h4>
+          <span class="story-role">Founding Engineer — SpaceX</span>
+          <p>"I was recruited directly from Star's Aerospace lab. The research-first approach here is unmatched anywhere in the world."</p>
+          <div class="story-pkg">Package: <strong>$185,000 / year</strong></div>
+        </div>
+      </div>
+      <div class="story-card glass tilt-card reveal" data-delay="300">
+        <img src="https://i.pravatar.cc/100?img=45" alt="Alumni">
+        <div class="story-body">
+          <h4>Priya Nair</h4>
+          <span class="story-role">Quantitative Analyst — Goldman Sachs</span>
+          <p>"The FinTech program and Star's partnership with Goldman was life-changing. I went from student to analyst in record time."</p>
+          <div class="story-pkg">Package: <strong>$140,000 / year</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Package Breakdown Chart -->
+<section class="section package-section">
+  <div class="container">
+    <div class="section-label reveal">Salary Analytics</div>
+    <h2 class="section-title reveal">Placement Package Breakdown</h2>
+    <div class="package-chart-wrap glass reveal">
+      <div class="pkg-chart" id="pkgChart">
+        <!-- Bars rendered by JS -->
+      </div>
+      <div class="pkg-legend">
+        <div class="pkg-legend-item"><span style="background:var(--sage)"></span>Engineering</div>
+        <div class="pkg-legend-item"><span style="background:#68c4ba"></span>Commerce / MBA</div>
+        <div class="pkg-legend-item"><span style="background:#a0c878"></span>Arts & Design</div>
+        <div class="pkg-legend-item"><span style="background:#5ba89a"></span>Sciences</div>
+        <div class="pkg-legend-item"><span style="background:#3d7a6e"></span>Health / Medicine</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:8px">
+          <div class="nav-logo-mark"><img src="college logo.png" alt="Star University Logo" width="100px" height="100px"></div>
+          <span>STAR UNIVERSITY</span>
+        </div>
+        <p>World's Number One University, shaping minds and transforming futures since 1950. A beacon of excellence, innovation and sustainable education.</p>
+        <div class="social-icons">
+          <div class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></div>
+          <div class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></div>
+          <div class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></div>
+          <div class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></div>
+          <div class="social-icon" title="Facebook"><i class="fab fa-facebook"></i></div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Academics</div>
+        <ul class="footer-links">
+          <li><a href="Courses.html">All Courses</a></li>
+          <li><a href="Courses.html">Engineering</a></li>
+          <li><a href="Courses.html">Arts & Design</a></li>
+          <li><a href="Courses.html">Commerce & MBA</a></li>
+          <li><a href="Courses.html">Research Programs</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Campus</div>
+        <ul class="footer-links">
+          <li><a href="Facilities.html">Facilities</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="Student Life.html">Student Life</a></li>
+          <li><a href="Placements.html">Placements</a></li>
+          <li><a href="About.html">About Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Contact</div>
+        <ul class="footer-links">
+          <li><a href="Contact.html"><i class="fas fa-map-marker-alt"></i> Star Avenue, Innovation City</a></li>
+          <li><a href="mailto:info@staruniversity.edu"><i class="fas fa-envelope"></i> info@staruniversity.edu</a></li>
+          <li><a href="tel:+18001234567"><i class="fas fa-phone"></i> +1 800 123 4567</a></li>
+          <li><a href="Admissions.html">Apply Online</a></li>
+          <li><a href="Contact.html">Help Center</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Star University. All Rights Reserved.</span>
+      <span>Privacy Policy · Terms of Use · Accessibility</span>
+    </div>
+  </div>
+</footer>
+
+<button class="ai-chat-btn"><i class="fas fa-robot"></i></button>
+<div class="ai-chat-widget">
+  <div class="chat-header"><div class="chat-avatar"><i class="fas fa-robot"></i></div><div class="chat-header-info"><h4>STAR AI Advisor</h4><p>Always online</p></div><div class="chat-online" style="margin-left:auto"></div></div>
+  <div class="chat-messages"><div class="chat-msg bot">👋 Need help choosing a course? I'm here!</div></div>
+  <div class="chat-input-row"><input class="chat-input" placeholder="Ask me anything…" type="text"><button class="chat-send">➤</button></div>
+</div>
+
+<script src="js/shared.js"></script>
+<script src="js/Placements.js"></script>
+</body>
+</html>

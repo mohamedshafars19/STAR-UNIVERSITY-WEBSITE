@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="college logo.png" type="image/png" style="border-radius: 24px;">
+  <title>Gallery — Star University</title>
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/Gallery.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div class="page-loader">
+  <div class="loader-logo"><img src="college logo.png" alt="Star University Logo" width="300px" height="300px" style="border-radius: 30%;"></div>
+  <div class="loader-logo">STAR UNIVERSITY</div>
+  <div class="loader-bar-track"><div class="loader-bar"></div></div>
+  <div class="loader-text">Curating Moments</div>
+</div>
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+<div class="progress-bar"></div>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo"><div class="nav-logo-mark"><img src="college logo.png" alt="Star University Logo" width="70px" height="70px"></div><span>STAR UNIVERSITY</span></a>
+  <ul class="nav-links"fw>
+    <li><a href="index.html">Home</a></li><li><a href="About.html">About</a></li>
+    <li><a href="Courses.html">Courses</a></li><li><a href="Admissions.html">Admissions</a></li>
+    <li><a href="Facilities.html">Facilities</a></li><li><a href="Gallery.html" class="active">Gallery</a></li>
+    <li><a href="Placements.html">Placements</a></li><li><a href="Student Life.html">Student Life</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-cta"><a href="Admissions.html" class="btn btn-primary" style="padding:10px 24px;font-size:13px;">Apply Now</a></div>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a><a href="About.html">About</a><a href="Courses.html">Courses</a>
+  <a href="Admissions.html">Admissions</a><a href="Facilities.html">Facilities</a>
+  <a href="Gallery.html">Gallery</a><a href="Placements.html">Placements</a>
+  <a href="Student Life.html">Student Life</a><a href="Contact.html">Contact</a>
+</div>
+
+<!-- Hero -->
+<section class="page-hero">
+  <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=1920&q=80" alt="Gallery" class="page-hero-bg">
+  <div class="page-hero-overlay"></div>
+  <div class="container">
+    <div class="page-hero-content">
+      <div class="section-label reveal">Campus Life in Pictures</div>
+      <h1 class="page-hero-title reveal"><span class="gradient-text">Visual Journey</span></h1>
+      <p class="page-hero-sub reveal">A cinematic glimpse into the world of Star University — campus, culture, and community.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Filter -->
+<section class="gal-filter-section">
+  <div class="container">
+    <div class="filter-bar reveal">
+      <button class="filter-btn active" data-gal="all">All</button>
+      <button class="filter-btn" data-gal="campus">Campus</button>
+      <button class="filter-btn" data-gal="labs">Labs & Tech</button>
+      <button class="filter-btn" data-gal="events">Events</button>
+      <button class="filter-btn" data-gal="sports">Sports</button>
+      <button class="filter-btn" data-gal="life">Student Life</button>
+    </div>
+  </div>
+</section>
+
+<!-- Bento Gallery Grid -->
+<section class="section gal-main">
+  <div class="container">
+    <div class="bento-gallery" id="bentoGallery">
+
+      <div class="gal-item gal-tall reveal" data-gal="campus" data-src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=1200&q=90" data-caption="Main Administration Building — The Heart of Star University">
+        <img src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=800&q=80" alt="Admin Building" loading="lazy"><div class="gal-overlay">
+  <span class="gal-label">Main Campus</span>
+  <span class="gal-zoom">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+  </span>
+</div>
+      </div>
+
+      <div class="gal-item reveal" data-gal="labs" data-src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=90" data-caption="AI & Robotics Research Lab — Where Tomorrow's Tech is Built Today" data-delay="100">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80" alt="AI Lab" loading="lazy">
+        <div class="gal-overlay"><span class="gal-label">AI Labs</span><span class="gal-zoom"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg></span></div>
+      </div>
+
+      <div class="gal-item reveal" data-gal="events" data-src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=90" data-caption="Annual Convocation — Celebrating 5,000 Graduates" data-delay="200">
+        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="Convocation" loading="lazy">
+        <div class="gal-overlay"><span class="gal-label">Convocation</span><span class="gal-zoom"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg></span></div>
+      </div>
+
+      <div class="gal-item gal-wide reveal" data-gal="campus" data-src="https://images.unsplash.com/photo-1562774053-701939374585?w=1400&q=90" data-caption="Aerial View of Star University — 500 Acres of Green Innovation" data-delay="100">
+        <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=900&q=80" alt="Aerial View" loading="lazy">
+        <div class="gal-overlay"><span class="gal-label">Aerial Campus View</span><span class="gal-zoom"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg></span></div>
+      </div>
+
+      <div class="gal-item reveal" data-gal="sports" data-src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1200&q=90" data-caption="Olympic Aquatic Centre — Home to 12 National Champions" data-delay="300">
+        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=600&q=80" alt="Sports" loading="lazy">
+        <div class="gal-overlay"><span class="gal-label">Sports Complex</span><span class="gal-zoom"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg></span></div>
+      </div>
+
+      <div class="gal-item reveal" data-gal="life" data-src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&q=90" data-caption="Student Collaboration Hub — Ideas Born Here" data-delay="200">
+        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80" alt="Students" loading="lazy">
+        <div class="gal-overlay"><span class="gal-label">Student Life</span><span class="gal-zoom"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg></span></div>
+      </div>
+
+      <div class="gal-item gal-tall reveal" data-gal="campus" data-src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=1200&q=90" data-caption="Campus Library Tower — 2 Million Books, Infinite Knowledge" data-delay="100">
+        <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=600&q=80" alt="Library" loading="lazy">
+        <div class="gal-overlay"><span class="gal-label">Knowledge Tower</span><span class="gal-zoom"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg></span></div>
+      </div>
+
+      <div class="gal-item reveal" data-gal="labs" data-src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=1200&q=90" data-caption="Biotechnology Research Lab — Pushing the Boundaries of Life Science" data-delay="300">
+        <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&q=80" alt="Bio Lab" loading="lazy">
+        <div class="gal-overlay"><span class="gal-label">Bio Labs</span><span class="gal-zoom"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg></span></div>
+      </div>
+
+      <div class="gal-item reveal" data-gal="events" data-src="https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1200&q=90" data-caption="Star Fest 2024 — Annual Cultural Extravaganza with 20,000 Attendees" data-delay="0">
+        <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?w=600&q=80" alt="Festival" loading="lazy">
+        <div class="gal-overlay"><span class="gal-label">Star Fest</span><span class="gal-zoom"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg></span></div>
+      </div>
+
+      <div class="gal-item gal-wide reveal" data-gal="life" data-src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1400&q=90" data-caption="Global Student Community — 190 Nationalities, One Family" data-delay="200">
+        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=900&q=80" alt="Community" loading="lazy">
+        <div class="gal-overlay"><span class="gal-label">Global Community</span><span class="gal-zoom"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg></span></div>
+      </div>
+
+      <div class="gal-item reveal" data-gal="sports" data-src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1200&q=90" data-caption="Indoor Sports Arena — Multi-Sports Facility Under One Roof" data-delay="100">
+        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&q=80" alt="Arena" loading="lazy">
+        <div class="gal-overlay"><span class="gal-label">Indoor Arena</span><span class="gal-zoom"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg></span></div>
+      </div>
+
+      <div class="gal-item reveal" data-gal="campus" data-src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=90" data-caption="Innovation Hub — Where Startups are Born Every Day" data-delay="200">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Innovation" loading="lazy">
+        <div class="gal-overlay"><span class="gal-label">Innovation Hub</span><span class="gal-zoom"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg></span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose">✕</button>
+  <button class="lb-nav lb-prev" id="lbPrev">‹</button>
+  <button class="lb-nav lb-next" id="lbNext">›</button>
+  <div class="lb-inner">
+    <img class="lb-img" id="lbImg" src="" alt="">
+    <div class="lb-caption" id="lbCaption"></div>
+    <div class="lb-counter" id="lbCounter"></div>
+  </div>
+</div>
+
+<!-- Footer -->
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:8px">
+          <div class="nav-logo-mark"><img src="college logo.png" alt="Star University Logo" width="100px" height="100px"></div>
+          <span>STAR UNIVERSITY</span>
+        </div>
+        <p>World's Number One University, shaping minds and transforming futures since 1950. A beacon of excellence, innovation and sustainable education.</p>
+        <div class="social-icons">
+          <div class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></div>
+          <div class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></div>
+          <div class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></div>
+          <div class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></div>
+          <div class="social-icon" title="Facebook"><i class="fab fa-facebook"></i></div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Academics</div>
+        <ul class="footer-links">
+          <li><a href="Courses.html">All Courses</a></li>
+          <li><a href="Courses.html">Engineering</a></li>
+          <li><a href="Courses.html">Arts & Design</a></li>
+          <li><a href="Courses.html">Commerce & MBA</a></li>
+          <li><a href="Courses.html">Research Programs</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Campus</div>
+        <ul class="footer-links">
+          <li><a href="Facilities.html">Facilities</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="Student Life.html">Student Life</a></li>
+          <li><a href="Placements.html">Placements</a></li>
+          <li><a href="About.html">About Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Contact</div>
+        <ul class="footer-links">
+          <li><a href="Contact.html"><i class="fas fa-map-marker-alt"></i> Star Avenue, Innovation City</a></li>
+          <li><a href="mailto:info@staruniversity.edu"><i class="fas fa-envelope"></i> info@staruniversity.edu</a></li>
+          <li><a href="tel:+18001234567"><i class="fas fa-phone"></i> +1 800 123 4567</a></li>
+          <li><a href="Admissions.html">Apply Online</a></li>
+          <li><a href="Contact.html">Help Center</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Star University. All Rights Reserved.</span>
+      <span>Privacy Policy · Terms of Use · Accessibility</span>
+    </div>
+  </div>
+</footer>
+
+<button class="ai-chat-btn"><i class="fas fa-robot"></i></button>
+<div class="ai-chat-widget">
+  <div class="chat-header"><div class="chat-avatar"><i class="fas fa-robot"></i></div><div class="chat-header-info"><h4>STAR AI Advisor</h4><p>Always online</p></div><div class="chat-online" style="margin-left:auto"></div></div>
+  <div class="chat-messages"><div class="chat-msg bot">👋 Need help choosing a course? I'm here!</div></div>
+  <div class="chat-input-row"><input class="chat-input" placeholder="Ask me anything…" type="text"><button class="chat-send">➤</button></div>
+</div>
+
+<script src="js/shared.js"></script>
+<script src="js/Gallery.js"></script>
+</body>
+</html>
